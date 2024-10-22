@@ -67,8 +67,8 @@ permalink: "blog/:title"
 # Collections
 collections:
   projects:
-  output: true
-  permalink: /projects/:name/
+    output: true
+    permalink: /projects/:name/
 
 # Compress
 compress_html:
