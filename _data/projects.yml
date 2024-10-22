@@ -1,16 +1,23 @@
+# PSEUDO_HAPTIC SHOULDER
 - name: Pseudo-Haptic Shoulder (Capstone)
-  image: https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg
+  image: "assets/images/SHULDRD%20Cover%20Image.png"
   link: 
   description: Electromechanical human shoulder to be used as training tool for manipulator robot.
+
+# KINEMATIC EXPERIMENT
 - name: Kinematic Experiment
   link: 
-  image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
+  image: "assets/images/Kinematic%20Experiment%20Cover%20Image.jpg"
   description: Replica mini-cannon machined using manual and CNC processes.
+
+# AUTONOMOUS VEHICLE
 - name: Autonomous Vehicle
   link:
-  image: https://cdn.pixabay.com/photo/2016/06/25/12/55/art-1478831_960_720.jpg
+  image: "assets/images/Autonomous%20Vehicle%20Cover%20Image.jpg"
   description: Autonomous vehicle using OCR to detect numbers and GPS coordinate logging for navigation.
+
+# NASA ROVER
 - name: NASA Planetary Rover
   link:
-  image: https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg
+  image: "assets/images/Rover%20Cover%20Image.jpg"
   description: Remote-controlled rover prototype that collects visual and sensory data about environment.
