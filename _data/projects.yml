@@ -1,9 +1,9 @@
 - name: Pseudo-Haptic Shoulder (Capstone)
   image: https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg
-  link: /projects/Pseudo_Haptic_Shoulder/
+  link: 
   description: Electromechanical human shoulder to be used as training tool for manipulator robot.
 - name: Kinematic Experiment
-  link: /projects/Kinematic_Experiment/
+  link: 
   image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
   description: Replica mini-cannon machined using manual and CNC processes.
 - name: Autonomous Vehicle

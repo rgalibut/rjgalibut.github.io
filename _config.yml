@@ -64,12 +64,6 @@ plugins:
 # Permalink
 permalink: "blog/:title"
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
-
 # Compress
 compress_html:
   clippings: all
