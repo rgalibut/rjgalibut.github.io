@@ -64,6 +64,12 @@ plugins:
 # Permalink
 permalink: "blog/:title"
 
+# Collections
+collections:
+  projects:
+  output: true
+  permalink: /projects/:name/
+
 # Compress
 compress_html:
   clippings: all
@@ -84,12 +90,6 @@ defaults:
       type: 'pages'
     values:
       layout: page
-
-# Collections
-collections:
-  projects:
-  output: true
-  permalink: /projects/:title/
 
 # Exclude
 exclude:

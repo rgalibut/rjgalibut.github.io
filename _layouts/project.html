@@ -5,28 +5,14 @@ layout: compress
 <!DOCTYPE html>
 <html>
 
-<head>
+<!--<head>
     {% include head.html %}
 </head>
 
 <body>
     {% include navbar.html %}
 
-    <section class="hero is-fullheight" id="project">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="section">
-                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Projects</p>
-                </div>
-                {% for project in site.projects %}
-                    {% include project-card.html %}
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-    <br>
-
-    <!--Main Section- ->
+    <!- -Main Section- ->
     <section class="hero is-fullheight" id="project">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -37,10 +23,35 @@ layout: compress
             </div>
         </div>
     </section>
-    </div>-->
+    </div>
 
-    <!--Footer-->
+    <!- -Footer- ->
     {% include footer.html %}
+</body>-->
+
+{% include head.html %}
+
+<body>
+    {% include navbar.html %}
+
+    <section class="hero is-fullheight" id="project">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="section"
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Projects</p>
+                </div>
+                <!--Project Cards Section-->
+                {% for project in site.project %}
+                    {% include project-card.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <br>
+    
+    <!--Footer begins here-->
+    {% include footer.html %}
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
 </body>
 
 </html>

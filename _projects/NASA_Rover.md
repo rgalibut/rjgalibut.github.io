@@ -1,7 +1,7 @@
 ---
 title: NASA Planetary Rover
-layout: project
-permalink: /projects/NASA_Rover/
+layout: post
+permalink: /projects/NASARover/
 post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
 description: DESCRIPTION HERE
 

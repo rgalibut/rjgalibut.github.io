@@ -1,7 +1,7 @@
 ---
 title: Kinematic Experiment
-layout: project
-permalink: /projects/Kinematic_Experiment/
+layout: post
+permalink: /projects/KinematicExperiment/
 post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
 description: DESCRIPTION HERE
 

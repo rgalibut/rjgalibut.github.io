@@ -1,7 +1,7 @@
 ---
 title: Pseudo-Haptic Shoulder
-layout: project
-permalink: /projects/Pseudo_Haptic_Shoulder/
+layout: post
+permalink: /projects/PseudoHapticShoulder/
 post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
 description: DESCRIPTION HERE
 

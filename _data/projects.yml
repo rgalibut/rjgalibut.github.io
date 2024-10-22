@@ -3,7 +3,7 @@
   link: /projects/Pseudo_Haptic_Shoulder/
   description: Electromechanical human shoulder to be used as training tool for manipulator robot.
 - name: Kinematic Experiment
-  link:
+  link: /projects/Kinematic_Experiment/
   image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
   description: Replica mini-cannon machined using manual and CNC processes.
 - name: Autonomous Vehicle
