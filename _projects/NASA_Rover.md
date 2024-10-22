@@ -1,7 +1,7 @@
 ---
-title: Pseudo-Haptic Shoulder
+title: NASA Planetary Rover
 layout: project
-permalink: /projects/Pseudo_Haptic_Shoulder/
+permalink: /projects/NASA_Rover/
 post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
 description: DESCRIPTION HERE
 
@@ -15,14 +15,20 @@ WORDS HERE
 
 ---
 
-# Path Planning
-
-### Shoulder Mannequin Trajectory
-
-### Manipulator Configuraion Through Trajectory
-
-### Simulated Path
+# Building and Wiring
 
 ---
 
-# Final Demonstration Video
+# Motor Control
+
+---
+
+# Visual Feedback
+
+--- 
+
+# Flask Website
+
+---
+
+# Camera Team Video

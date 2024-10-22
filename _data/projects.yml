@@ -1,6 +1,6 @@
 - name: Pseudo-Haptic Shoulder (Capstone)
   image: https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg
-  link: 
+  link: /projects/Pseudo_Haptic_Shoulder/
   description: Electromechanical human shoulder to be used as training tool for manipulator robot.
 - name: Kinematic Experiment
   link:

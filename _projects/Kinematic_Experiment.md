@@ -1,7 +1,7 @@
 ---
-title: Pseudo-Haptic Shoulder
+title: Kinematic Experiment
 layout: project
-permalink: /projects/Pseudo_Haptic_Shoulder/
+permalink: /projects/Kinematic_Experiment/
 post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
 description: DESCRIPTION HERE
 
@@ -15,14 +15,6 @@ WORDS HERE
 
 ---
 
-# Path Planning
+# Assembled Device
 
-### Shoulder Mannequin Trajectory
-
-### Manipulator Configuraion Through Trajectory
-
-### Simulated Path
-
----
-
-# Final Demonstration Video
+PICS HERE

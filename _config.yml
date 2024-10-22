@@ -85,6 +85,12 @@ defaults:
     values:
       layout: page
 
+# Collections
+collections:
+  projects:
+  output: true
+  permalink: /projects/:title/
+
 # Exclude
 exclude:
   - .sass-cache/
