@@ -2,7 +2,7 @@
 title: Pseudo-Haptic Shoulder
 layout: post
 date_range: January 2024 - June 2024
-post-image: "{{ site.url}}{{ site.baseurl}}/assets/images/SHULDRD%20Cover%20Image.png"
+post-image: "assets/images/SHULDRD%20Cover%20Image.png"
 description: Electromechanical human shoulder to be used as training tool for manipulator robot.
 
 ---
