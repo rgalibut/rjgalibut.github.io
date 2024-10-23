@@ -2,7 +2,7 @@
 title: Kinematic Experiment
 layout: post
 date_range: September 2023 - December 2023
-post-image: "assets/images/Kinematic%20Experiment%20Cover%20Image.jpg"
+post-image: "https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Kinematic%20Experiment%20Cover%20Image.jpg"
 description: Replica mini-cannon machined using manual and CNC processes.
 
 ---
@@ -18,4 +18,6 @@ To create the aluminum front and acrylic back, I used CNC lathes and mills. I pr
 
 # Assembled Device
 
-PICS HERE
+![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Front%20View.jpg "Front-View") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Side%20View%20Right.jpg "Right-View") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Back%20View.jpg "Back-View") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Side%20View%20Left.jpg "Left-View")
+:----------:|:----------:|:----------:|:----------:
+Front | Right | Back | Left

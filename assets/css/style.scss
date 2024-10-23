@@ -353,3 +353,23 @@ a.navbar-item.is-active {
         }
     }
 }
+
+
+table {
+    border: 1px hidden black; /* Hidden black border */
+    margin: 5px 0;
+    width: 100%;
+  }
+  th {
+    border: 1px hidden black; /* Hidden black border */
+    text-align: center; 
+    vertical-align: middle;
+  }
+  tr {
+    border: 1px hidden black; /* Hidden black border */
+  }      
+  td {
+    border: 1px hidden black; /* Hidden black border */
+    text-align: center;
+    vertical-align: middle;
+  }

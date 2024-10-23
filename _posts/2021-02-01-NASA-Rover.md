@@ -2,7 +2,7 @@
 title: NASA Planetary Rover
 layout: post
 date_range: February 2021 - August 2021
-post-image: "assets/images/Rover%20Cover%20Image.jpg"
+post-image: "https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/NASA%20Rover/Rover%20Cover%20Image.jpg"
 description: Remote-controlled rover prototype that collects visual and sensory data about environment.
 
 ---
@@ -23,12 +23,34 @@ Due to the time constraint of the internship, our group and the remaining groups
 # Building and Wiring
 The first task of the project was to build the rover by wiring components to a breadboard connected to a Raspberry Pi. The logic rail of the breadboard was powered by a portable power bank, while the power rail of the breadboard pulled from a disposable battery pack. The wheels were connected to motors, which were soldered and wired to the power rail of the breadboard. Lastly, the camera was mounted to front of the rover, plugged into the Pi, and wired to the power rail.
 
+<table width="100%">
+  <tr>
+    <th style="text-align: center">Materals (minus camera)</th>
+    <th style="text-align: center">Final Assembly</th>
+  </tr>
+  <tr>
+    <td style="text-align: center" width="50%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/NASA%20Rover/Materials.jpg" alt="Materials"/></td>
+    <td style="text-align: center" width="50%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/NASA%20Rover/Assembled.png" alt="Assembled"/></td>
+  </tr>
+</table>
+
 ---
 
 # Motor Control
 To control all four wheels, we used a dual H-bridge motor driver connected to 4 DC gearbox motors. This was my first time working with a motor driver so I frequently referred to documentation and conducted research to troubleshoot issues.
 
 The motor polarity was initially controlled using a computer keyboard (arrow keys) and the motor speed for each direction was preset through code. The area that the rover could travel was limited to the room that I was controlling it from, since I had to be able to see it visually and also control it from my computer.
+
+<table width="100%">
+  <tr>
+    <th style="text-align: center">Wiring</th>
+    <th style="text-align: center">Wiring (Dual H-Bridge)</th>
+  </tr>
+  <tr>
+    <td style="text-align: center" width="50%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/NASA%20Rover/Wiring1.jpg" alt="Wiring"/></td>
+    <td style="text-align: center" width="50%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/NASA%20Rover/Wiring2.jpg" alt="H-Bridge"/></td>
+  </tr>
+</table>
 
 ---
 

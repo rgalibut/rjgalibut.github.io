@@ -2,7 +2,7 @@
 title: Autonomous Vehicle with Optical Character Recognition
 layout: post
 date_range: January 2023 - March 2023
-post-image: "assets/images/Autonomous%20Vehicle%20Cover%20Image.jpg"
+post-image: "https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Autonomous%20Vehicle%20Cover%20Image.jpg"
 description: Autonomous vehicle using OCR to detect numbers and GPS coordinate logging for navigation.
 
 ---
@@ -21,12 +21,20 @@ We were able to achieve the main objectives of our final project. However, given
 ---
 
 # Optical Character Recognition
-Screenshot of video taken from camera demonstrating real-time text detection. Window on upper-left shows expected text from larger window. It was observed that white letters on black background were more difficult to capture than black letters on white background.
+![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/OCR.jpg "OCR") | Screenshot of video taken from camera demonstrating real-time text detection. Window on upper-left shows expected text from larger window. It was observed that white letters on black background were more difficult to capture than black letters on white background.
 
 ---
 
 # GPS Coordinate Logging
-PICS HERE
+INFORMATION HERE
+
+![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Path%201.png "Coordinates-1") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Navigating%20to%201.png "Navigation-1")
+:---:|:---:
+Location 1 Coordinates | Navigating to Location 1
+
+![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Path%2-4.png "Coordinates-4") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Navigating%20to%204.png "Navigation-4")
+:---:|:---:
+Location 4 Coordinates | Navigating to Location 4
 
 ---
 

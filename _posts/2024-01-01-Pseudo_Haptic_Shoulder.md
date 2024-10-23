@@ -2,7 +2,7 @@
 title: Pseudo-Haptic Shoulder
 layout: post
 date_range: January 2024 - June 2024
-post-image: "assets/images/SHULDRD%20Cover%20Image.png"
+post-image: "https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Haptic%20Shoulder/SHULDRD%20Cover%20Image.png"
 description: Electromechanical human shoulder to be used as training tool for manipulator robot.
 
 ---
@@ -21,36 +21,82 @@ Our team was comprised of mechanical engineering majors assigned to specific tea
 ---
 
 # Path Planning
-Our device is to be used as a training tool for a serial-link manipulator robot, specifically the Franka Emika Panda (right). The Panda has 7 DOF and each joint is either revolute or prismatic. 
+<table>
+  <tr>
+    <td style="text-align: left" width="35%" rowspan="2">Our device is to be used as a training tool for a serial-link manipulator robot, specifically the Franka Emika Panda (right). The Panda has 7 DOF and each joint is either revolute or prismatic. <br><br> The Panda uses Devanit-Hartenberg (DH) parameters, wherein coordinate frames are attached to each joint so that the transformations correspond to either the joint or the link. <br><br> For our project, we defined the world space (Cartesian or c-space) in relation to the Panda base. Each joint was then assigned individual joint spaces. Finally, we defined the shoulder space and used vector transformations to relate it to the world space of the Panda.</td>
+    <td style="text-align: center" width="65%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Haptic%20Shoulder/Franka%20Emika%20Panda.png" alt="Panda"/></td>
+  </tr>
+  <tr>
+    <td style="text-align: center; font-size: 12px">Image courtesy of <a href="https://frankaemika.github.io/docs/control_parameters.html">Franka Robotics</a></td>
+  </tr>
+</table>
 
-The Panda uses Devanit-Hartenberg (DH) parameters, wherein coordinate frames are attached to each joint so that the transformations correspond to either the joint or the link.
+<table width="100%">
+  <tr>
+    <td style="text-align: center" width="60%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Haptic%20Shoulder/ReFlex%201%20Coordinate%20Frame.png" alt="End-Effector"/></td>
+    <td style="text-align: left" width="40%">The end-effector used is the RightHand Robotics ReFlex 1 (left), which has 3 fingers, 5 DOF, and a squishy palm to allow for some compliance. The coordinate frame is defined with the z-axis pointing downwards towards object being gripped, and the x-axis pointed to the side, as shown in the picture of the Panda above.</td>
+  </tr>
+</table>
 
-For our project, we defined the world space (Cartesian or c-space) in relation to the Panda base. Each joint was then assigned individual joint spaces. Finally, we defined the shoulder space and used vector transformations to relate it to the world space of the Panda.
-
-The end-effector used is the RightHand Robotics ReFlex 1 (left), which has 3 fingers, 5 DOF, and a squishy palm to allow for some compliance. The coordinate frame is defined with the z-axis pointing downwards towards object being gripped, and the x-axis pointed to the side, as shown in the picture of the Panda above.
-
-The shoulder mannequin coordinate frame (left) is defined with the z-axis pointing up towards the "head," and the x-axis pointing outside of the right side of the body.
+<table width="100%">
+  <tr>
+    <td style="text-align: center" width="60%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Haptic%20Shoulder/Shoulder%20Coordinate%20Frame.png" alt="Shoulder"/></td>
+    <td style="text-align: left" width="40%">The shoulder mannequin coordinate frame (left) is defined with the z-axis pointing up towards the "head," and the x-axis pointing outside of the right side of the body.</td>
+  </tr>
+</table>
 
 ### Shoulder Mannequin Trajectory
-Using the human shoulder ROM values from Table 1 to the left (researched and provided by the mechanical team), the path of the shoulder was simulated in software. Assuming a prone position, the flexion, horizontal abduction, and horizontal adduction directions were not considered. 
-
-In the image on the left, the z-axis points up towards the head, the x-axis points to the outside of the right side of the body (blue line), and the y-axis points towards the front of the body. ϕ is defined as the angle from the z-axis, θ is defined as the angle from the x-axis, and the radial direction is set to 1.
-
-The green circles indicate: 
-
-- $\phi$  = 180$^{\circ}$, $\theta$  = 0$^{\circ}$ (arm down by leg)
-- $\phi$  = 130$^{\circ}$, $\theta$  = -80$^{\circ}$ (arm extended backwards)
-- $\phi$  = 0$^{\circ}$, $\theta$  = 0$^{\circ}$ (arm up by head)
+<table width="100%">
+  <tr>
+    <td style="text-align: center" width="60%" rowspan="2"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Haptic%20Shoulder/Shoulder%20Limits.png" alt="Shoulder-Limits"/></td>
+    <td style="text-align: left" width="40%">Using the human shoulder ROM values from Table 1 to the left (researched and provided by the mechanical team), the path of the shoulder was simulated in software. Assuming a prone position, the flexion, horizontal abduction, and horizontal adduction directions were not considered.<br><br>In the image on the left, the z-axis points up towards the head, the x-axis points to the outside of the right side of the body (blue line), and the y-axis points towards the front of the body. ϕ is defined as the angle from the z-axis, θ is defined as the angle from the x-axis, and the radial direction is set to 1.<br><br></td>
+  </tr>
+  <tr>
+    <td>
+      The green circles indicate: 
+      <table>
+      <tr>
+        <th>NAME</th>
+        <th>NAME</th>
+        <th>Explanation</th>
+      </tr>
+      <tr>
+          <td width="30%">&phi; = 180&deg;</td>
+          <td width="30%">&theta;  = 0&deg;</td>
+          <td width="40%">Arm down by leg</td>
+      </tr>
+      <tr>
+          <td width="30%">&phi; = 130&deg;</td>
+          <td width="30%">&theta;  = -80&deg;</td>
+          <td width="40%">Arm extended backwards</td>
+      </tr>
+      <tr>
+          <td width="30%">&phi;  = 0&deg;</td>
+          <td width="30%">&theta;  = 0&deg;</td>
+          <td width="40%">Arm up by head</td>
+      </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 This trajectory assumes that ROM is not coupled (perfect trajectory). This was done for simplicity, as coupling the ROM would require an external rotation at step 2.
 
 ### Manipulator Configuraion Through Trajectory
-The Panda has more DOF than our device (7 vs. 3) so there are multiple solutions to the configuration at each point along the desired path. It was important to seed the previous configuration into the next calculation in order to assure a smooth motion and prevent discontinuities.
-
-To make the (numerical) inverse kinematics easier, we constrained the end-effector so that it did not rotate (reference frame remained the same). However, to realistically model upper-arm repositioning, we would need an optimization framework that allowed the end-effector to rotate, which was beyond the scope and timeframe of the project.
+<table width="100%">
+  <tr>
+    <td style="text-align: center" width="65%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Haptic%20Shoulder/Panda%2050pt%20Traj.gif" alt="Panda-GIF"/></td>
+    <td style="text-align: left" width="34%">The Panda has more DOF than our device (7 vs. 3) so there are multiple solutions to the configuration at each point along the desired path. It was important to seed the previous configuration into the next calculation in order to assure a smooth motion and prevent discontinuities.<br><br>To make the (numerical) inverse kinematics easier, we constrained the end-effector so that it did not rotate (reference frame remained the same). However, to realistically model upper-arm repositioning, we would need an optimization framework that allowed the end-effector to rotate, which was beyond the scope and timeframe of the project.</td>
+  </tr>
+</table>
 
 ### Simulated Path
-This overlay demonstrates one series of configurations that the Panda would move through in relation to the shoulder mannequin through the defined trajectory. 
+<table width="100%">
+  <tr>
+    <td style="text-align: center" width="65%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Haptic%20Shoulder/Shoulder%20Path%20GIF.gif" alt="Shoulder-GIF"/></td>
+    <td style="text-align: left" width="34%">This overlay demonstrates one series of configurations that the Panda would move through in relation to the shoulder mannequin through the defined trajectory. </td>
+  </tr>
+</table>
 
 ---
 
