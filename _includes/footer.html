@@ -14,17 +14,17 @@
                 <div class="column is-full is-size-3">
                     <!--GMAIL-->
                     {% unless site.email ==  %}
-                    <a href="mailto:{{site.email}}" target="_blank" class="has-text-white"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:{{site.email}}" target="_blank" class="has-text-white"><i class="fas fa-envelope"></i></a>
                     {% endunless %}
                 
                     <!--LINKEDIN-->
                     {% unless site.linkedin_username ==  %}
-                    <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
                     {% endunless %}
 
                     <!--GITHUB-->
                     {% unless site.github_username ==  %}
-                    <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-white"><i class="fab fa-github"></i></a>
+                        <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-white"><i class="fab fa-github"></i></a>
                     {% endunless %}
                 </div>
             </div>
