@@ -2,13 +2,15 @@
 title: Virtual Bank
 layout: post
 date_range: June 2018 - August 2018
-post-image: 
+post-image: "https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Banking%20Menu.png"
 description: A command-line banking application that allows you to deposit, withdraw, and write checks.
 
 ---
 
 # About Project
-Prompt
+The final project for my C/C++ programming course was to create a command-line virtual banking application that mimicked a real online bank account. Users should be able to deposit, withdraw, and transfer funds between a Checking and Savings Account; issue checks from their Checking Account for a fee; and print mock statements showing user information, acount balances, account fees, and check-writing fees.
+
+# Prompt
 ```
 Design and implement a hierarchy inheritance system of banking, which includes Savings and Checking Accounts of a customer. Inheritance and virtual funtions must be used and applied, otherwise there is no credit.
 
@@ -31,13 +33,22 @@ The following features must be incorporated:
 		- The monthly interest rate is 2.5%.
 ```
 
-# TITLE HERE
+# Code
 
-- Created a command-line virtual banking application that allowed user to deposit and withdraw cash, transfer funds
-between accounts, and write checks for a fee.
-- Collected user input and displayed information in a mock statement, including current account balances, accumulated
-interest, check writing fees, and service charge fees.
-- Programmed using C++, using object-oriented programming principles such as class inheritance and virtual functions.
+The application was writting in C++ using object-oriented programming principles, such as class inheritance and virtual functions.
+
+The program collected and stored user information in variables that could be recalled when printing mock account statements. Account fees and check fees were tracked as well.
+
+<table>
+  <tr>
+	<th>Log In Screen</th>
+	<th>Welcome Screen</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Log%20In.png" alt="Log-In"></td>
+	<td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Welcome.png" alt="Welcome"></td>
+  </tr>
+</table>
 
 <table>
   <tr>
