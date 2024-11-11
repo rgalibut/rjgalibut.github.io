@@ -30,3 +30,22 @@ The following features must be incorporated:
 		- A $15 charge for each bounced check (not enough funds).
 		- The monthly interest rate is 2.5%.
 ```
+
+# TITLE HERE
+
+- Created a command-line virtual banking application that allowed user to deposit and withdraw cash, transfer funds
+between accounts, and write checks for a fee.
+- Collected user input and displayed information in a mock statement, including current account balances, accumulated
+interest, check writing fees, and service charge fees.
+- Programmed using C++, using object-oriented programming principles such as class inheritance and virtual functions.
+
+<table>
+  <tr>
+	<th>Checking Account Menu</th>
+	<th>Savings Account Menu</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Checking%20Account.png" alt="Checking"></td>
+	<td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Savings%20Account.png" alt="Savings"></td>
+  </tr>
+</table>

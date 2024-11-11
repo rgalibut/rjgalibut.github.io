@@ -17,7 +17,17 @@ To create the aluminum front and acrylic back, I used CNC lathes and mills. I pr
 ---
 
 # Assembled Device
-
-![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Front%20View.jpg "Front-View") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Side%20View%20Right.jpg "Right-View") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Back%20View.jpg "Back-View") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Side%20View%20Left.jpg "Left-View")
-:----------:|:----------:|:----------:|:----------:
-Front | Right | Back | Left
+<table>
+  <tr>
+    <th>Front</th>
+    <th>Right</th>
+    <th>Back</th>
+    <th>Left</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Front%20View.jpg" alt="Front"></td>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Side%20View%20Right.jpg" alt="Right"></td>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Back%20View.jpg" alt="Back"></td>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Kinematic%20Experiment/Side%20View%20Left.jpg" alt="Left"></td>
+  </tr>
+</table>

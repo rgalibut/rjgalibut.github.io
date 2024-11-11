@@ -3,6 +3,60 @@
 
 @import "main.scss";
 
+body {
+    background-color: rgba(31,33,35,255);
+
+    hr {
+        background-color: grey;
+    }
+}
+
+table {
+    min-width: 900px;       // base min width for table
+    border: none;
+    margin: auto;
+    width: 95%; 
+    table-layout: fixed;
+}
+
+tr {
+    border: none;
+}
+
+th, td { 
+    /*border: none !important;*/
+    border: 1px black;
+    text-align: center !important;
+    vertical-align: middle;
+    color: white !important;
+    padding: 5px;
+    width: 1%;
+    /*background-color: grey;*/
+}
+
+td img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;            // fill available space
+    height: auto;           // maintain aspect ratio
+    padding: 0;
+}
+
+/* 2 images per row */
+table tr:has(td:nth-child(2):last-child) img {
+    min-width: 350px;
+}
+
+/* 3 images per row */
+table tr:has(td:nth-child(3):last-child) img {
+    min-width: 250px;
+}
+
+/* 4 images per row */
+table tr:has(td:nth-child(4):last-child) img {
+    min-width: 180px;
+}
+
 #navbar {
     opacity: 0.95;
 }
@@ -68,6 +122,10 @@ a.navbar-item.is-active {
     letter-spacing: 0.25rem;
 }
 
+.content {
+    color: white;
+}
+
 #about {
     .image {
         max-width: 20vmax;
@@ -81,6 +139,52 @@ a.navbar-item.is-active {
     a {
         min-width: 25vmax;
         margin: 0.5rem;
+    }
+}
+
+.masthead-heading, .masthead-intro {
+    text-align: center;
+}
+
+.masthead {
+    padding: 11em 0;
+    background-image: url({{site.heroimage}});
+    /*filter: blur(0.15rem);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    border-top: solid 2em #b69760;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+    /*font-family: "Gentium Book Basic", Georgia, serif;*/
+    font-size: 4em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.masthead-heading {
+    margin-top: -0.2em;
+    /*font-family: "Open Sans", "Helvetica Neue", sans-serif;*/
+    font-weight: light;
+    font-size: 1.5em;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.25rem;
+}
+
+.introduction, .education, .experience, .other {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    color: white;
+    
+    h1 {
+        font-size: 20px;
     }
 }
 
@@ -102,7 +206,7 @@ a.navbar-item.is-active {
     }
 
     hr {
-        background-color: black;
+        background-color: grey;
     }
 }
 
@@ -153,6 +257,7 @@ a.navbar-item.is-active {
 
         .title {
             margin: 0.5rem !important;
+            color: white;
         }
 
         .content {
@@ -210,14 +315,17 @@ a.navbar-item.is-active {
         }
     }
 
+    
+
     .container {
         margin: auto;
         padding: 1.5rem;
         line-height: 1.25;
 
         .column {
-            display: grid;
+            display: float;
             justify-content: center;
+            width: 100%;
 
             li {
                 list-style: circle;
@@ -301,6 +409,7 @@ a.navbar-item.is-active {
     }
     .title {
         margin: auto;
+        color: white;
     }
     #post-image {
         border-radius: 0.25rem;
@@ -317,10 +426,13 @@ a.navbar-item.is-active {
         margin: 0.15rem auto;
     }
     .content {
+
+        color: white;
+
         ol, ul, blockquote {
             display: inline-block;
         }
-        hr{
+        hr {
             background-color: grey;
         }
         img, iframe {
@@ -333,6 +445,11 @@ a.navbar-item.is-active {
         ul, ol {
             display: inline-block;
         }
+
+        h1, h2, h3, h4, h5 {
+            color: white;
+        }
+
     }
 
     .container {
@@ -354,22 +471,3 @@ a.navbar-item.is-active {
     }
 }
 
-
-table {
-    border: 1px hidden black; /* Hidden black border */
-    margin: 5px 0;
-    width: 100%;
-  }
-  th {
-    border: 1px hidden black; /* Hidden black border */
-    text-align: center; 
-    vertical-align: middle;
-  }
-  tr {
-    border: 1px hidden black; /* Hidden black border */
-  }      
-  td {
-    border: 1px hidden black; /* Hidden black border */
-    text-align: center;
-    vertical-align: middle;
-  }

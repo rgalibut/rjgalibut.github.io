@@ -21,20 +21,43 @@ We were able to achieve the main objectives of our final project. However, given
 ---
 
 # Optical Character Recognition
-![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/OCR.jpg "OCR") | Screenshot of video taken from camera demonstrating real-time text detection. Window on upper-left shows expected text from larger window. It was observed that white letters on black background were more difficult to capture than black letters on white background.
+
+<table>
+  <tr>
+    <td style="text-align: center" width="65%"><img style="margin: 0 auto" src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/OCR.jpg" alt="OCR"></td>
+    <td style="text-align: left" width="35%">Screenshot of video taken from camera demonstrating real-time text detection. Window on upper-left shows expected text from larger window. It was observed that white letters on black background were more difficult to capture than black letters on white background.</td>
+  </tr>
+</table>
 
 ---
 
 # GPS Coordinate Logging
-INFORMATION HERE
+<table>
+  <tr>
+    <th>Location 1 Coordinates</th>
+    <th>Navigating to Location 1</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Path%201.png" alt="Coordinates-1"></td>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Navigating%20to%201.png" alt="Navigation-1"></td>
+  </tr>
+</table>
 
-![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Path%201.png "Coordinates-1") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Navigating%20to%201.png "Navigation-1")
-:---:|:---:
-Location 1 Coordinates | Navigating to Location 1
+<table>
+  <tr>
+    <th>Location 4 Coordinates</th>
+    <th>Navigating to Location 4</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Path%204.png" alt="Coordinates-4"></td>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Navigating%20to%204.png" alt="Navigation-4"></td>
+  </tr>
+</table>
 
-![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Path%2-4.png "Coordinates-4") | ![](https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Autonomous%20Vehicle/Navigating%20to%204.png "Navigation-4")
-:---:|:---:
-Location 4 Coordinates | Navigating to Location 4
+---
+
+# Videos
+VIDEOS HERE
 
 ---
 
