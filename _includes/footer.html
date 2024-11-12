@@ -1,12 +1,8 @@
 <footer id="footer">
-    <!--Footer Button- ->
-    <div class="container has-text-centered has-background-grey-darker" id="backtotop">
-        <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
-    </div>-->
     <!--Footer Main Section-->
     <div class="has-background-grey-darker">
         <div class="container columns">
-            <!--Name Section-->
+            <!--Links Section-->
             <div class="column has-text-centered-desktop has-text-centered-mobile">
                 <h3 class="is-size-5 is-uppercase has-text-centered has-text-weight-semibold has-text-white is-marginless">
                     You can find me here
@@ -14,48 +10,24 @@
                 <div class="column is-full is-size-3">
                     <!--GMAIL-->
                     {% unless site.email ==  %}
-                        <a href="mailto:{{site.email}}" target="_blank" class="has-text-white"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:{{site.email}}" target="_blank" class="has-text-white"><i class="fas fa-envelope"></i></a>
                     {% endunless %}
                 
                     <!--LINKEDIN-->
                     {% unless site.linkedin_username ==  %}
-                        <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
+                    <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
                     {% endunless %}
 
                     <!--GITHUB-->
                     {% unless site.github_username ==  %}
-                        <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-white"><i class="fab fa-github"></i></a>
+                    <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-white"><i class="fab fa-github"></i></a>
                     {% endunless %}
                 </div>
             </div>
-
-            <!--Link Section- ->
-            <div class="column has-text-white">
-                <h3>More Links</h3>
-                {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/'  limit: 2 %}
-                <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                </li>
-                {% endunless %}
-                {% endfor %}
-                <!- -RSS Feed- ->
-                <li>
-                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
-                </li>
-            </div>
-
-            <!- -Blog-post Section- ->
-            <div class="column has-text-white">
-                <h3>Recent Posts</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
-                {% endfor %}
-            </div>-->
         </div>
     </div>
+
+    <!--Credit Section-->
     <div class="has-background-black has-text-centered has-text-white" id="credits">
         <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
     </div>

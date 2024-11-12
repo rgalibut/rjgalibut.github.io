@@ -7,7 +7,6 @@ description: Autonomous vehicle using OCR to detect numbers and GPS coordinate l
 
 ---
 
-# About Project
 In this course, our team was tasked with building, developing, programming, and testing a 1/8-scale robotic car that would navigate autonomously along a racetrack using computer vision, a LiDAR sensor, and a GPS device. Our final project incorporated GPS coordinates and optical character recognition to tell the car which location to navigate to, based on the visual prompt it was given.
 
 To train the car to drive autonomously, we first simulated the car and track in a virtual environment (Donkeycar inside of Donkey Simulator) and manually completed laps around the track using a game controller. This data was sent to UCSD's supercomputer to leverage the computational power of its GPU clusters and train the AI model. This model was returned to the simulator, where the virtual car could then run laps autonomously. We used the same strategy to train the car in a real environment along a real track.
@@ -18,9 +17,14 @@ For our group's final project, we wanted to incorporate the position data provid
 
 We were able to achieve the main objectives of our final project. However, given more time, we would have liked to incorporate the LiDAR to detect and avoid obstacles (such as other restaurant patrons or, in reality, students walking around campus).
 
+<p style="text-align: center">
+Jump to:
+<a href="#ocr">Optical Character Recognition</a> | <a href="#gps">GPS Coordinate Logging</a> | <a href="#videos">Videos</a> | <a href="#presentation">Final Project Presentation</a>
+</p>
+
 ---
 
-# Optical Character Recognition
+<h1 id="ocr">Optical Character Recognition</h1>
 
 <table>
   <tr>
@@ -31,7 +35,7 @@ We were able to achieve the main objectives of our final project. However, given
 
 ---
 
-# GPS Coordinate Logging
+<h1 id="gps">GPS Coordinate Logging</h1>
 <table>
   <tr>
     <th>Location 1 Coordinates</th>
@@ -56,10 +60,40 @@ We were able to achieve the main objectives of our final project. However, given
 
 ---
 
-# Videos
-VIDEOS HERE
+<h1 id="videos">Videos</h1>
+#### DonkeyCar in DonkeySim
+Three autonomous laps completed in virtual environment. The window on the right shows that the car is running on "Full Auto" (no input from me).
+
+<div class="video-container" syle="align:center">
+  <iframe src="https://drive.google.com/file/d/1MFuD4B3zvs83UKxiCq4B74QGKUz9X7y9/preview" width="640" height="480" allowfullscreen></iframe>
+</div>
+
+#### Navigating Path 001
+Waiter-Bot navigating to first location, designated "001."
+<div class="video-container">
+  <iframe src="https://drive.google.com/file/d/1oQynWgQyOUr9G6peNUZNg_jaXVI5AQT6/preview" width="640" height="480" allowfullscreen></iframe>
+</div>
+
+#### Navigating Path 004
+Waiter-Bot navigating to first location, designated "004."
+
+<div class="video-container">
+  <iframe src="https://drive.google.com/file/d/1sU-K0zyRMx_rfUpsm4Da8Dik9T0qjWRW/preview" width="640" height="480" allowfullscreen></iframe>
+</div>
 
 ---
 
-# Final Project Presentation
-SLIDES HERE
+<h1 id="presentation">Final Project Presentation</h1>
+<center>
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRHOne5akC5NY8yTIySbvbBdFqpIkCEU8QYnfKhFPp3mvACvVGvrEVLf1nhJ6nt5g/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</center>
+
+Final notes:
+- Waiter-Bot is not truly autonomous, as it still requires human input to start and restart the program. The program doesn't run indefinitely and can only take one input per run.
+- OCR program had trouble recognizing single numbers ("1" and "4") so we opted to put zeros in front. We considered using letter recognition instead of number recognition but letters proved to be less consistently successful. It would require further tweaking of the code to increase accuracy.
+- Our wireless controller was not working so we are using a wired controller.
+- Locations are marked with a black X on the ground.
+
+<div style="text-align: center">
+  <a href="#top">Back to top</a>
+</div>

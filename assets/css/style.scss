@@ -3,6 +3,7 @@
 
 @import "main.scss";
 
+//////////////////// MAIN ////////////////////
 body {
     background-color: rgba(31,33,35,255);
 
@@ -11,11 +12,29 @@ body {
     }
 }
 
+//////////////////// LINKS ////////////////////
+a:link, a:visited {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: grey;
+    text-decoration: none;
+}
+
+//////////////////// TABLES ////////////////////
 table {
-    min-width: 900px;       // base min width for table
+    min-width: 800px;       // base min width for table
+    max-width: 1600px;      // prevent table from getting too wide
     border: none;
     margin: auto;
-    width: 95%; 
+    width: 90%; 
     table-layout: fixed;
 }
 
@@ -24,14 +43,22 @@ tr {
 }
 
 th, td { 
-    /*border: none !important;*/
-    border: 1px black;
+    border: none !important;
+    //border: 1px black;
     text-align: center !important;
     vertical-align: middle;
     color: white !important;
     padding: 5px;
     width: 1%;
     /*background-color: grey;*/
+}
+
+table th {
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.2;
 }
 
 td img {
@@ -57,6 +84,47 @@ table tr:has(td:nth-child(4):last-child) img {
     min-width: 180px;
 }
 
+/* video container styling */
+.video-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* iframe styling */
+.video-container iframe {
+    width: 100%;
+    min-width: 450px;
+    height: 400px;
+}
+
+/* video cell container */
+td:has(.video-container) {
+    width: 60%;                 // video cell takes up 60% of space
+    text-align: center;         // center video container in cell
+    min-width: 400px;           // min width for video cell
+}
+
+/* text cell container */
+td.text-cell {
+    width: 40%;                 // text cell takes up 40% of space
+    text-align: left;           // left align text content
+    padding: 15px 25px;
+    word-wrap: break-word;
+}
+
+/* for larger screens */
+@media screen and (min-width: 1200px) {
+    .video-container {
+        min-width: 640px;
+    }
+
+    .video-container iframe {
+        min-height: 360px;
+    }
+}
+
+//////////////////// NAVBAR ////////////////////
 #navbar {
     opacity: 0.95;
 }
@@ -91,7 +159,7 @@ a.navbar-item.is-active {
     border-color: grey;
 }
 
-
+//////////////////// HERO ////////////////////
 #hero {
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
@@ -142,6 +210,8 @@ a.navbar-item.is-active {
     }
 }
 
+
+//////////////////// ABOUT ME ////////////////////
 .masthead-heading, .masthead-intro {
     text-align: center;
 }
@@ -149,16 +219,15 @@ a.navbar-item.is-active {
 .masthead {
     padding: 11em 0;
     background-image: url({{site.heroimage}});
-    /*filter: blur(0.15rem);*/
+    //filter: blur(0.15rem);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    border-top: solid 2em #b69760;
+    //border-top: solid 2em #b69760;
 }
 
 .masthead-intro {
     margin-bottom: 0.1em;
-    /*font-family: "Gentium Book Basic", Georgia, serif;*/
     font-size: 4em;
     color: white;
     text-transform: uppercase;
@@ -167,7 +236,6 @@ a.navbar-item.is-active {
 
 .masthead-heading {
     margin-top: -0.2em;
-    /*font-family: "Open Sans", "Helvetica Neue", sans-serif;*/
     font-weight: light;
     font-size: 1.5em;
     letter-spacing: -0.01em;
@@ -188,6 +256,7 @@ a.navbar-item.is-active {
     }
 }
 
+//////////////////// CONTACT ////////////////////
 #contact {
     #contact-button {
         margin: 0.5rem auto;
@@ -210,6 +279,7 @@ a.navbar-item.is-active {
     }
 }
 
+//////////////////// BLOG PAGE ////////////////////
 #blog {
     .hero-body {
         padding: 3rem 0.25rem 1rem 0.25rem;
@@ -302,8 +372,9 @@ a.navbar-item.is-active {
     }
 }
 
-
+//////////////////// FOOTER ////////////////////
 #footer {
+  
     #backtotop {
         transition: all 0.25s ease;
         width: 10rem;
@@ -365,6 +436,7 @@ a.navbar-item.is-active {
     }
 }
 
+//////////////////// PROJECT ////////////////////
 #project {
     .columns {
         .column {
@@ -397,6 +469,7 @@ a.navbar-item.is-active {
     }
 }
 
+//////////////////// POST ////////////////////
 #post {
     @media (min-width: 768px) {
         margin: auto 2.5vmax;
@@ -463,6 +536,7 @@ a.navbar-item.is-active {
     }
 }
 
+//////////////////// PAGE ////////////////////
 #page-section {
     .content {
         ul, ol, blockquote {

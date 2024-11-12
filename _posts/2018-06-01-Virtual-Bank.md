@@ -2,7 +2,7 @@
 title: Virtual Bank
 layout: post
 date_range: June 2018 - August 2018
-post-image: "https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Banking%20Menu.png"
+post-image: "https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Banking%20Menu.PNG"
 description: A command-line banking application that allows you to deposit, withdraw, and write checks.
 
 ---
@@ -45,8 +45,8 @@ The program collected and stored user information in variables that could be rec
 	<th>Welcome Screen</th>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Log%20In.png" alt="Log-In"></td>
-	<td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Welcome.png" alt="Welcome"></td>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Log%20In.PNG" alt="Log-In"></td>
+	<td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Welcome.PNG" alt="Welcome"></td>
   </tr>
 </table>
 
@@ -56,7 +56,7 @@ The program collected and stored user information in variables that could be rec
 	<th>Savings Account Menu</th>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Checking%20Account.png" alt="Checking"></td>
-	<td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Savings%20Account.png" alt="Savings"></td>
+    <td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Checking%20Account.PNG" alt="Checking"></td>
+	<td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Savings%20Account.PNG" alt="Savings"></td>
   </tr>
 </table>
