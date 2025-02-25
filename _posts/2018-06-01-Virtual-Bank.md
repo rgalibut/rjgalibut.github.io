@@ -7,10 +7,17 @@ description: A command-line banking application that allows you to deposit, with
 
 ---
 
-# About Project
 The final project for my C/C++ programming course was to create a command-line virtual banking application that mimicked a real online bank account. Users should be able to deposit, withdraw, and transfer funds between a Checking and Savings Account; issue checks from their Checking Account for a fee; and print mock statements showing user information, acount balances, account fees, and check-writing fees.
 
-# Prompt
+<p style="text-align: center">
+Jump to: 
+<a href="#prompt">Prompt</a> | <a href="#code">Code</a>
+</p>
+
+---
+
+<h1 id="prompt">Prompt</h1>
+
 ```
 Design and implement a hierarchy inheritance system of banking, which includes Savings and Checking Accounts of a customer. Inheritance and virtual funtions must be used and applied, otherwise there is no credit.
 
@@ -33,7 +40,7 @@ The following features must be incorporated:
 		- The monthly interest rate is 2.5%.
 ```
 
-# Code
+<h1 id="code">Code</h1>
 
 The application was writting in C++ using object-oriented programming principles, such as class inheritance and virtual functions.
 
@@ -60,3 +67,7 @@ The program collected and stored user information in variables that could be rec
 	<td><img src="https://raw.githubusercontent.com/rgalibut/rgalibut.github.io/main/assets/images/Virtual%20Bank/Savings%20Account.PNG" alt="Savings"></td>
   </tr>
 </table>
+
+<div style="text-align: center">
+  <a href="#top">Back to top</a>
+</div>
